@@ -18,7 +18,7 @@ Don't expect that I'll list everything here (e.g. install git, libreoffice, fire
 list what are other uncommon tools that I need them or found them useful to me, but it's usually
 hard to remember them (or even their names) at once, so here they are:
 
-### extra packages repositories
+### Extra packages repositories
 
 I often activate the `multilib` repository in `/etc/pacman.conf` plus these 2 more repos:
 
@@ -34,7 +34,7 @@ Server = http://repo.herecura.be/herecura-stable/$arch
 SigLevel = PackageOptional
 ```
 
-### sorting the best mirrors
+### Sorting the best mirrors
 
 I use [Reflector](https://wiki.archlinux.org/index.php/Reflector), a script which can retrieve the 
 latest mirror list from the [MirrorStatus](https://www.archlinux.org/mirrors/status/) page, filter 
@@ -49,7 +49,7 @@ reflector --verbose -l 6 --sort rate --save /etc/pacman.d/mirrorlis
 
 You can find it in `scripts/bestservers.sh` so you don't have to remember it.
 
-### font configs 
+### Font configs 
 
 I use the awesome [infinality](http://www.infinality.net/) project to improve the font rendering, to 
 an even better-than-windows rendering:
@@ -183,9 +183,9 @@ I believe there are other useful tools I use from time to time, I'll write them 
 
 # TODO
 
-- [ ] Android devices handling.
-- [ ] My nginx configuration files.
-- [ ] Add an install file for auto-installing all of the mentioned tools and config/dotfiles.
+- ☐ Android devices handling.
+- ☐ My nginx configuration files.
+- ☐ Add an install file for auto-installing all of the mentioned tools and config/dotfiles.
 
 # License
 
