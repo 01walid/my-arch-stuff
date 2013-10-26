@@ -185,6 +185,7 @@ I believe there are other useful tools I use from time to time, I'll write them 
 
 - [ ] Android devices handling.
 - [ ] My nginx configuration files.
+- [ ] Add an install file for auto-installing all of the mentioned tools and config/dotfiles.
 
 # License
 
