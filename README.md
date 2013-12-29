@@ -107,6 +107,10 @@ To be able to format USB sticks and other hard-disk partitions to FAT/NTFS:
 ```shell
 pacman -S dosfstools # gets you mkfs.vfat and mkfs.msdos
 pacman -S ntfsprogs  # gets you mkfs.ntf
+pacman -S exfat-utils # for the exFAT file system
+
+# optional, for supporting the Samsung Flash-Friendly File System (F2FS)
+pacman -S f2fs-tools
 ```
 
 ### Better Terminal
@@ -139,6 +143,7 @@ from time to time, I run these commands:
 
 ```shell 
 $ pacman -Sc # to delete unused packages and free up disk space
+$ pacman-optimize # Improves pacman's database access speeds (puts all the small files together in one (physical) location on the hard disk )
 $ fc-cache -vf # for refreshing the font cache
 $ yaourt -Syua --deve # full system update, however I often just use pacman -Syu
 ```
@@ -176,8 +181,9 @@ $ tree
 you can print that to file: `tree > file.txt`
 * `pacman -S cloc` for counting lines of code, see: http://cloc.sourceforge.net, kudos to @sohaibafifi.
 
-* `setfacl` (comes with systemd as a dependency) for more advanced folder and user/groups permissions
+* `setfacl` (comes with systemd as a dependency) for more advanced folder and user/groups permissions.
 * `pacdiff` for managing `.pacnew` files and see the diff, and also use Kompare, and Kdiff3 (GUIs for KDE).
+* `yaourt --stats` nice stats about installed packages.
 
 I believe there are other useful tools I use from time to time, I'll write them here whenever I remember them.
 
