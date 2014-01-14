@@ -137,6 +137,16 @@ git config --global color.ui true
 git config format.pretty oneline # optional
 ```
 
+### Allow mounting a filesystem on a system device for any user
+Put the following in `/etc/polkit-1/rules.d/10-enable-mount.rules` 
+```
+polkit.addRule(function(action) {
+    if (action.id == "org.freedesktop.udisks2.filesystem-mount-system") {
+        return polkit.Result.YES;
+    }
+});
+```
+
 ## Routine stuff
 
 from time to time, I run these commands:
