@@ -155,7 +155,7 @@ from time to time, I run these commands:
 $ pacman -Sc # to delete unused packages and free up disk space
 $ pacman-optimize # Improves pacman's database access speeds (puts all the small files together in one (physical) location on the hard disk )
 $ fc-cache -vf # for refreshing the font cache
-$ yaourt -Syua --deve # full system update, however I often just use pacman -Syu
+$ yaourt -Syua --devel # full system update, however I often just use pacman -Syu
 ```
 
 # Tools I use
